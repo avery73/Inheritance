@@ -22,7 +22,7 @@ class Mammal:
 
 # The Dog class is a subclass of the Mammal class.
 
-class Dog(Mammal):
+class Dog(Mammal): # subclass
 
     # The __init__ method calls the superclass's
     # __init__ method passing 'Dog' as the species.
@@ -38,7 +38,7 @@ class Dog(Mammal):
 
 # The Cat class is a subclass of the Mammal class.
 
-class Cat(Mammal):
+class Cat(Mammal): #subclass
 
     # The __init__ method calls the superclass's
     # __init__ method passing 'Cat' as the species.

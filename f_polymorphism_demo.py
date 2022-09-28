@@ -1,6 +1,7 @@
 # This program demonstrates polymorphism.
 
 import f_animals as animals
+from f_polymorphism_demo2 import show_mammal_info
 
 def main():
     # Create a Mammal object, a Dog object, and
@@ -9,7 +10,26 @@ def main():
     dog = animals.Dog()
     cat = animals.Cat()
 
+# comment goes here
 
+    show_mammal_info(mammal)
+    show_mammal_info(dog)
+    show_mammal_info(cat)
+    #show_mammal_info("Bird") # wrong
+    # is instance can see if something is an instance of a class
+
+def show_mammal_info(creature):
+    if isinstance(creature, animals.Mammal):
+        creature.show_species()
+        creature.make_sound()
+    else:
+        print("This is not a mammal")
+
+# Call the main function.
+main()
+
+
+'''
     # Display information about each one.
     print('Here are some animals and')
     print('the sounds they make.')
@@ -26,6 +46,4 @@ def main():
 
     cat.show_species()
     cat.make_sound()
-
-# Call the main function.
-main()
+'''
