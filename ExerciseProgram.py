@@ -6,10 +6,10 @@ def main():
     address = "1234 Main St"
     telephone = "123-456-7890"
     cust_num = 1234
-    bool_data = False
+    on_list = False # has to be uppercase False
 
-    person1 = E.Person(name, address, telephone)
-    customer1 = E.Customer(name, address, telephone, cust_num, bool_data)
+    person1 = E.Person(name, address, telephone) # instance of superclass
+    customer1 = E.Customer(name, address, telephone, cust_num, on_list) # instance of customer class
 
     person1.print_person()
     print()
